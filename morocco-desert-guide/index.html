@@ -1,0 +1,2667 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>摩洛哥沙漠体验选择指南 | Agafay vs Merzouga</title>
+  <style>
+    :root {
+      --sand-50: #fbf6ed;
+      --sand-100: #f1dfc3;
+      --sand-200: #dfbd83;
+      --clay: #b75f38;
+      --date: #4f372a;
+      --ink: #2d2922;
+      --muted: #7a6d5d;
+      --sage: #5e7467;
+      --teal: #2f615c;
+      --rose: #c88f7f;
+      --line: rgba(79, 55, 42, 0.16);
+      --paper: rgba(255, 252, 245, 0.74);
+      --shadow: 0 24px 70px rgba(77, 50, 27, 0.14);
+      --page-bg:
+        radial-gradient(circle at 12% 8%, rgba(200, 143, 127, 0.22), transparent 30%),
+        linear-gradient(180deg, #f8ecda 0%, #fbf6ed 38%, #f3e3cc 100%);
+      --hero-gradient:
+        linear-gradient(110deg, rgba(52, 37, 27, 0.76), rgba(82, 55, 35, 0.48) 45%, rgba(251, 246, 237, 0.12)),
+        linear-gradient(180deg, rgba(244, 209, 151, 0.74), rgba(187, 102, 60, 0.3));
+      --badge-gradient: linear-gradient(135deg, rgba(183, 95, 56, 0.86), rgba(47, 97, 92, 0.78));
+      color-scheme: light;
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif;
+    }
+
+    body[data-theme="fresh"] {
+      --sand-50: #f3faf4;
+      --sand-100: #d9eadb;
+      --sand-200: #a8c9b3;
+      --clay: #c77755;
+      --date: #2d443c;
+      --ink: #263730;
+      --muted: #65766d;
+      --sage: #77a78b;
+      --teal: #3d7f79;
+      --rose: #d9a28f;
+      --line: rgba(45, 68, 60, 0.15);
+      --paper: rgba(251, 255, 248, 0.78);
+      --shadow: 0 24px 70px rgba(45, 68, 60, 0.13);
+      --page-bg:
+        radial-gradient(circle at 12% 8%, rgba(119, 167, 139, 0.22), transparent 30%),
+        linear-gradient(180deg, #edf7ed 0%, #fbfff8 42%, #e6f0df 100%);
+      --hero-gradient:
+        linear-gradient(110deg, rgba(39, 57, 49, 0.74), rgba(82, 103, 83, 0.42) 45%, rgba(251, 255, 248, 0.12)),
+        linear-gradient(180deg, rgba(212, 232, 198, 0.78), rgba(199, 119, 85, 0.22));
+      --badge-gradient: linear-gradient(135deg, rgba(199, 119, 85, 0.82), rgba(61, 127, 121, 0.78));
+    }
+
+    body[data-theme="sunny"] {
+      --sand-50: #fff9ea;
+      --sand-100: #f8dfaa;
+      --sand-200: #f2bd62;
+      --clay: #c96f37;
+      --date: #493524;
+      --ink: #302920;
+      --muted: #7c6b55;
+      --sage: #78986f;
+      --teal: #397f91;
+      --rose: #dc997b;
+      --line: rgba(73, 53, 36, 0.15);
+      --paper: rgba(255, 253, 244, 0.78);
+      --shadow: 0 24px 70px rgba(135, 80, 33, 0.14);
+      --page-bg:
+        radial-gradient(circle at 10% 6%, rgba(242, 189, 98, 0.22), transparent 30%),
+        linear-gradient(180deg, #fff2cf 0%, #fff9ea 40%, #f7e2b3 100%);
+      --hero-gradient:
+        linear-gradient(110deg, rgba(64, 45, 29, 0.72), rgba(172, 103, 47, 0.38) 45%, rgba(255, 249, 234, 0.1)),
+        linear-gradient(180deg, rgba(255, 221, 137, 0.76), rgba(57, 127, 145, 0.18));
+      --badge-gradient: linear-gradient(135deg, rgba(201, 111, 55, 0.84), rgba(57, 127, 145, 0.74));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--sand-50);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page-bg);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(79, 55, 42, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79, 55, 42, 0.026) 1px, transparent 1px);
+      background-size: 46px 46px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 72%);
+      z-index: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 0 26px;
+      color: var(--date);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    .mark {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(79, 55, 42, 0.28);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--clay);
+      background: rgba(255, 251, 243, 0.72);
+      flex: 0 0 auto;
+    }
+
+    .mark::before {
+      content: "";
+      width: 16px;
+      height: 10px;
+      border-radius: 16px 16px 4px 4px;
+      background: linear-gradient(135deg, var(--clay), var(--sand-200));
+      transform: skewX(-14deg);
+    }
+
+    .nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      text-decoration: none;
+      font-size: 13px;
+      padding: 8px 12px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      color: var(--muted);
+      transition: 180ms ease;
+    }
+
+    .nav a:hover {
+      border-color: rgba(79, 55, 42, 0.16);
+      background: rgba(255, 252, 245, 0.58);
+      color: var(--ink);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: clamp(650px, 88vh, 840px);
+      border: 1px solid rgba(79, 55, 42, 0.14);
+      border-radius: 8px;
+      background:
+        var(--hero-gradient),
+        var(--hero-image, none);
+      background-size: cover;
+      background-position: center;
+      box-shadow: var(--shadow);
+    }
+
+    .share-tools {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: min(560px, calc(100% - 36px));
+      padding: 8px;
+      border: 1px solid rgba(79, 55, 42, 0.14);
+      border-radius: 8px;
+      background: rgba(255, 252, 245, 0.9);
+      box-shadow: 0 18px 50px rgba(77, 50, 27, 0.15);
+      backdrop-filter: blur(14px);
+    }
+
+    .tool-button,
+    .image-action {
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 1px solid rgba(79, 55, 42, 0.16);
+      border-radius: 999px;
+      min-height: 34px;
+      padding: 8px 12px;
+      color: var(--date);
+      background: rgba(255, 252, 245, 0.92);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 760;
+      cursor: pointer;
+      transition: 180ms ease;
+    }
+
+    .image-action small {
+      color: inherit;
+      font-size: 10px;
+      font-weight: 720;
+      opacity: 0.72;
+      line-height: 1;
+    }
+
+    .tool-button:hover,
+    .image-action:hover {
+      color: #fff8eb;
+      background: var(--teal);
+      border-color: transparent;
+      transform: translateY(-1px);
+    }
+
+    .tool-button.primary {
+      color: #fff8eb;
+      background: var(--clay);
+      border-color: transparent;
+    }
+
+    .editor-status {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+
+    .theme-picker {
+      display: inline-flex;
+      gap: 4px;
+      padding: 3px;
+      border: 1px solid rgba(79, 55, 42, 0.12);
+      border-radius: 999px;
+      background: rgba(255, 252, 245, 0.64);
+    }
+
+    .theme-button {
+      appearance: none;
+      min-height: 28px;
+      border: 0;
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: var(--muted);
+      background: transparent;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 760;
+      cursor: pointer;
+      transition: 160ms ease;
+    }
+
+    .theme-button:hover,
+    .theme-button.is-active {
+      color: #fff8eb;
+      background: var(--teal);
+    }
+
+    .image-action {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 6;
+      opacity: 0.94;
+      box-shadow: 0 10px 28px rgba(39, 26, 18, 0.16);
+    }
+
+    .hero > .image-action {
+      top: 22px;
+      right: 22px;
+    }
+
+    .image-slot.is-dragging,
+    .hero.is-dragging,
+    .result-badge.is-dragging,
+    .route-map.is-dragging {
+      outline: 2px dashed rgba(47, 97, 92, 0.72);
+      outline-offset: -10px;
+    }
+
+    .image-slot.has-custom-image .slot-caption,
+    .hero.has-custom-image .hero-note {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .hero.has-custom-image {
+      background: var(--hero-image, none);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero.has-custom-image::before,
+    .hero.has-custom-image::after,
+    .image-slot.has-custom-image::before {
+      display: none;
+    }
+
+    .image-slot.has-custom-image {
+      background: var(--slot-image, none);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    body.customer-ready [data-editor-only],
+    body.customer-ready .share-tools,
+    body.customer-ready .image-file-input {
+      display: none !important;
+    }
+
+    .preview-exit {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 30;
+      display: none;
+      min-height: 38px;
+      padding: 9px 14px;
+      border: 1px solid rgba(255, 248, 235, 0.32);
+      border-radius: 999px;
+      color: #fff8eb;
+      background: rgba(47, 97, 92, 0.92);
+      box-shadow: 0 18px 50px rgba(38, 28, 20, 0.18);
+      backdrop-filter: blur(14px);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 780;
+      cursor: pointer;
+    }
+
+    body.preview-mode .preview-exit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .crop-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      background: rgba(35, 28, 22, 0.58);
+      backdrop-filter: blur(12px);
+    }
+
+    .crop-modal.is-open {
+      display: flex;
+    }
+
+    .crop-panel {
+      width: min(920px, 100%);
+      max-height: min(92vh, 820px);
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      gap: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 248, 235, 0.36);
+      border-radius: 8px;
+      background: rgba(255, 252, 245, 0.96);
+      box-shadow: 0 28px 90px rgba(35, 28, 22, 0.28);
+    }
+
+    .crop-head,
+    .crop-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px 20px;
+    }
+
+    .crop-head {
+      border-bottom: 1px solid rgba(79, 55, 42, 0.1);
+    }
+
+    .crop-head h3 {
+      margin: 0;
+      color: var(--date);
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .crop-head p {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .crop-stage-wrap {
+      min-height: 0;
+      padding: 0 20px;
+      display: grid;
+      place-items: center;
+      overflow: auto;
+    }
+
+    .crop-stage {
+      position: relative;
+      width: min(100%, 760px);
+      max-height: 54vh;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 8px;
+      background:
+        linear-gradient(45deg, rgba(79, 55, 42, 0.08) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(79, 55, 42, 0.08) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(79, 55, 42, 0.08) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(79, 55, 42, 0.08) 75%),
+        #f7efe2;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+      background-size: 20px 20px;
+      box-shadow: inset 0 0 0 1px rgba(79, 55, 42, 0.18);
+      cursor: grab;
+      touch-action: none;
+    }
+
+    .crop-stage.is-dragging {
+      cursor: grabbing;
+    }
+
+    .crop-stage img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      transform-origin: 0 0;
+    }
+
+    .crop-stage::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      box-shadow: inset 0 0 0 2px rgba(255, 248, 235, 0.92), inset 0 0 0 999px rgba(35, 28, 22, 0.02);
+    }
+
+    .crop-controls {
+      border-top: 1px solid rgba(79, 55, 42, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .crop-zoom {
+      min-width: min(360px, 100%);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--date);
+      font-size: 13px;
+      font-weight: 760;
+    }
+
+    .crop-zoom input {
+      width: min(280px, 54vw);
+      accent-color: var(--teal);
+    }
+
+    .crop-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    body.text-edit-mode [data-editable-text] {
+      outline: 1px dashed rgba(47, 97, 92, 0.42);
+      outline-offset: 3px;
+      border-radius: 4px;
+      cursor: text;
+    }
+
+    body.text-edit-mode [data-editable-text]:focus {
+      outline: 2px solid rgba(47, 97, 92, 0.72);
+      background: rgba(255, 252, 245, 0.72);
+      box-shadow: 0 0 0 6px rgba(47, 97, 92, 0.08);
+    }
+
+    body.customer-ready [data-editable-text] {
+      outline: 0;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: -4%;
+      right: -4%;
+      bottom: -1px;
+      height: 34%;
+      background:
+        radial-gradient(90% 62% at 20% 90%, rgba(92, 60, 35, 0.92), transparent 70%),
+        radial-gradient(92% 70% at 78% 100%, rgba(198, 126, 68, 0.74), transparent 72%);
+      border-radius: 50% 50% 0 0 / 38% 38% 0 0;
+      transform: translateY(9%);
+      opacity: 0.86;
+    }
+
+    .hero::after {
+      bottom: 7%;
+      height: 22%;
+      background:
+        radial-gradient(70% 46% at 16% 100%, rgba(239, 195, 128, 0.86), transparent 72%),
+        radial-gradient(88% 62% at 78% 100%, rgba(118, 78, 48, 0.7), transparent 74%);
+      opacity: 0.74;
+      animation: slow-drift 12s ease-in-out infinite alternate;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(330px, 0.72fr);
+      gap: clamp(24px, 4vw, 54px);
+      min-height: inherit;
+      align-items: stretch;
+      padding: clamp(28px, 5vw, 64px);
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+      color: #fff8eb;
+      text-shadow: 0 1px 18px rgba(25, 20, 14, 0.3);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: rgba(255, 248, 235, 0.82);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 44px;
+      height: 1px;
+      background: rgba(255, 248, 235, 0.62);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin-top: 36px;
+      font-size: clamp(44px, 7vw, 92px);
+      line-height: 0.98;
+      font-weight: 820;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 600px;
+      margin-top: 24px;
+      color: rgba(255, 248, 235, 0.9);
+      font-size: clamp(17px, 2.2vw, 24px);
+      line-height: 1.7;
+    }
+
+    .hero-note {
+      align-self: flex-start;
+      margin-top: 42px;
+      padding: 11px 14px;
+      border-left: 2px solid rgba(255, 248, 235, 0.62);
+      color: rgba(255, 248, 235, 0.78);
+      font-size: 12px;
+      line-height: 1.6;
+      background: rgba(45, 38, 27, 0.23);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-panel {
+      align-self: center;
+      display: grid;
+      gap: 14px;
+      padding: 16px;
+      border: 1px solid rgba(255, 248, 235, 0.28);
+      border-radius: 8px;
+      background: rgba(255, 248, 235, 0.15);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero-choice {
+      display: grid;
+      gap: 12px;
+      padding: 18px;
+      border-radius: 8px;
+      background: rgba(255, 252, 245, 0.88);
+      color: var(--ink);
+      box-shadow: 0 20px 40px rgba(38, 28, 20, 0.16);
+    }
+
+    .hero-choice strong {
+      font-size: 17px;
+      color: var(--date);
+    }
+
+    .hero-choice p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 31px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(94, 116, 103, 0.12);
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .pill.clay {
+      background: rgba(183, 95, 56, 0.12);
+      color: var(--clay);
+    }
+
+    section {
+      margin-top: clamp(34px, 6vw, 72px);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.72fr) minmax(250px, 0.48fr);
+      gap: 26px;
+      align-items: end;
+      margin-bottom: 20px;
+    }
+
+    .section-kicker {
+      color: var(--clay);
+      font-size: 13px;
+      font-weight: 780;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h2 {
+      margin-top: 9px;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.12;
+      color: var(--date);
+      font-weight: 820;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .decision-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .decision-card,
+    .surface {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 16px 50px rgba(77, 50, 27, 0.08);
+    }
+
+    .decision-card {
+      padding: 22px;
+      min-height: 156px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .decision-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(183, 95, 56, 0.28);
+      box-shadow: 0 20px 56px rgba(77, 50, 27, 0.12);
+    }
+
+    .decision-card h3 {
+      color: var(--date);
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 780;
+    }
+
+    .decision-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .mini-label {
+      display: inline-flex;
+      width: fit-content;
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: rgba(183, 95, 56, 0.1);
+      color: var(--clay);
+      font-size: 12px;
+      font-weight: 760;
+    }
+
+    .compare-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 14px;
+    }
+
+    .desert-card {
+      overflow: hidden;
+    }
+
+    .desert-card .image-slot {
+      height: clamp(230px, 30vw, 330px);
+    }
+
+    .image-slot {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      isolation: isolate;
+      background:
+        linear-gradient(160deg, rgba(47, 97, 92, 0.2), transparent 44%),
+        linear-gradient(180deg, rgba(255, 241, 211, 0.92), rgba(198, 126, 68, 0.38)),
+        var(--slot-image, none);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .image-slot::before {
+      content: "";
+      position: absolute;
+      inset: auto -12% -18% -12%;
+      height: 58%;
+      background:
+        radial-gradient(70% 60% at 25% 90%, rgba(107, 72, 43, 0.72), transparent 66%),
+        radial-gradient(90% 70% at 75% 100%, rgba(214, 158, 86, 0.86), transparent 70%);
+      border-radius: 50% 50% 0 0;
+      z-index: -1;
+    }
+
+    .image-slot[data-kind="rock"] {
+      background:
+        linear-gradient(150deg, rgba(47, 97, 92, 0.18), transparent 45%),
+        linear-gradient(180deg, rgba(237, 215, 178, 0.96), rgba(152, 111, 76, 0.42)),
+        var(--slot-image, none);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .image-slot[data-kind="dunes"] {
+      background:
+        linear-gradient(145deg, rgba(244, 213, 150, 0.88), rgba(183, 95, 56, 0.16)),
+        var(--slot-image, none);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .image-slot.has-custom-image {
+      background: var(--slot-image, none);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .slot-caption {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      z-index: 3;
+      padding: 9px 10px;
+      border: 1px solid rgba(255, 252, 245, 0.44);
+      border-radius: 6px;
+      color: rgba(255, 252, 245, 0.92);
+      background: rgba(42, 32, 24, 0.44);
+      backdrop-filter: blur(9px);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .card-body {
+      padding: 22px;
+    }
+
+    .card-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .card-head h3 {
+      color: var(--date);
+      font-size: clamp(25px, 3vw, 34px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .card-head span {
+      flex: 0 0 auto;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(79, 55, 42, 0.14);
+      color: var(--muted);
+      background: rgba(255, 252, 245, 0.58);
+      font-size: 12px;
+      font-weight: 760;
+    }
+
+    .metric-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .metric {
+      min-height: 86px;
+      padding: 13px;
+      border-radius: 8px;
+      background: rgba(255, 252, 245, 0.58);
+      border: 1px solid rgba(79, 55, 42, 0.1);
+    }
+
+    .metric b {
+      display: block;
+      color: var(--teal);
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .metric small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .table-wrap {
+      overflow: hidden;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 16px 18px;
+      text-align: left;
+      border-bottom: 1px solid rgba(79, 55, 42, 0.1);
+      vertical-align: top;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    th {
+      color: var(--date);
+      background: rgba(255, 252, 245, 0.48);
+      font-size: 13px;
+      letter-spacing: 0.02em;
+    }
+
+    td:first-child {
+      width: 22%;
+      color: var(--muted);
+      font-weight: 760;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .route-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.86fr) minmax(0, 1fr);
+      gap: 14px;
+    }
+
+    .route-map {
+      position: relative;
+      overflow: hidden;
+      padding: 24px;
+      display: grid;
+      gap: 20px;
+      background:
+        linear-gradient(120deg, rgba(255, 252, 245, 0.94), rgba(255, 252, 245, 0.78)),
+        var(--slot-image, none),
+        var(--paper);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .route-map.has-custom-image {
+      background: var(--slot-image, none);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 20px 60px rgba(77, 50, 27, 0.12);
+    }
+
+    .route-map.has-custom-image .route-line,
+    .route-map.has-custom-image h3 {
+      position: relative;
+      z-index: 2;
+    }
+
+    .route-line {
+      position: relative;
+      display: grid;
+      gap: 17px;
+      padding-left: 30px;
+    }
+
+    .route-line::before {
+      content: "";
+      position: absolute;
+      left: 9px;
+      top: 10px;
+      bottom: 10px;
+      width: 2px;
+      background: linear-gradient(var(--clay), var(--teal));
+      opacity: 0.42;
+      transform-origin: top;
+      animation: draw-line 1300ms ease both;
+    }
+
+    .stop {
+      position: relative;
+      display: grid;
+      gap: 4px;
+    }
+
+    .stop::before {
+      content: "";
+      position: absolute;
+      left: -27px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--sand-50);
+      border: 2px solid var(--clay);
+      box-shadow: 0 0 0 5px rgba(183, 95, 56, 0.1);
+    }
+
+    .stop:nth-child(even)::before {
+      border-color: var(--teal);
+      box-shadow: 0 0 0 5px rgba(47, 97, 92, 0.1);
+    }
+
+    .stop b {
+      color: var(--date);
+      font-size: 15px;
+    }
+
+    .stop span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .route-copy {
+      display: grid;
+      gap: 14px;
+    }
+
+    .route-note {
+      padding: 22px;
+      min-height: 170px;
+      display: grid;
+      align-content: center;
+      gap: 10px;
+    }
+
+    .route-note h3 {
+      color: var(--date);
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .route-note p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 14px;
+    }
+
+    .package {
+      padding: 24px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .package.featured {
+      border-color: rgba(47, 97, 92, 0.24);
+      background: linear-gradient(135deg, rgba(255, 252, 245, 0.86), rgba(226, 239, 229, 0.5));
+    }
+
+    .package-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .package h3 {
+      color: var(--date);
+      font-size: 25px;
+      line-height: 1.18;
+    }
+
+    .price {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      color: var(--clay);
+      font-size: 26px;
+      font-weight: 820;
+      white-space: nowrap;
+    }
+
+    .price small {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .included {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .included li {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 10px;
+      border-radius: 8px;
+      background: rgba(255, 252, 245, 0.62);
+      border: 1px solid rgba(79, 55, 42, 0.09);
+      color: var(--date);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .included li::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--sage);
+      flex: 0 0 auto;
+    }
+
+    .choice-lab {
+      padding: 24px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    button.filter {
+      appearance: none;
+      border: 1px solid rgba(79, 55, 42, 0.14);
+      border-radius: 8px;
+      min-height: 58px;
+      padding: 12px 14px;
+      color: var(--date);
+      background: rgba(255, 252, 245, 0.6);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 760;
+      cursor: pointer;
+      transition: 180ms ease;
+    }
+
+    button.filter:hover,
+    button.filter.is-active {
+      color: #fff8eb;
+      background: var(--teal);
+      border-color: transparent;
+      transform: translateY(-2px);
+    }
+
+    .recommendation {
+      display: grid;
+      grid-template-columns: minmax(0, 0.45fr) minmax(0, 1fr);
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .result-badge {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      display: grid;
+      place-items: center;
+      min-height: 164px;
+      border-radius: 8px;
+      background:
+        var(--badge-gradient),
+        var(--slot-image, none);
+      background-size: cover;
+      background-position: center;
+      color: #fff8eb;
+      text-align: center;
+      padding: 18px;
+    }
+
+    .result-badge > div {
+      position: relative;
+      z-index: 2;
+    }
+
+    .result-badge.has-custom-image {
+      background: var(--slot-image, none);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .result-badge.has-custom-image b,
+    .result-badge.has-custom-image span {
+      text-shadow: 0 1px 10px rgba(35, 28, 22, 0.28);
+    }
+
+    .decision-image-store {
+      display: none;
+    }
+
+    .result-badge b {
+      display: block;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .result-badge span {
+      display: block;
+      margin-top: 8px;
+      font-size: 13px;
+      opacity: 0.86;
+    }
+
+    .result-copy {
+      display: grid;
+      align-content: center;
+      gap: 10px;
+      min-height: 164px;
+      padding: 22px;
+      border-radius: 8px;
+      background: rgba(255, 252, 245, 0.62);
+      border: 1px solid rgba(79, 55, 42, 0.1);
+    }
+
+    .result-copy h3 {
+      color: var(--date);
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    .result-copy p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .final-panel {
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(300px, 0.48fr);
+      min-height: 420px;
+      background: linear-gradient(135deg, rgba(255, 252, 245, 0.82), rgba(231, 211, 181, 0.58));
+    }
+
+    .final-copy {
+      padding: clamp(26px, 5vw, 50px);
+      display: grid;
+      align-content: center;
+      gap: 18px;
+    }
+
+    .final-copy h2 {
+      margin: 0;
+    }
+
+    .final-copy p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.85;
+      max-width: 720px;
+    }
+
+    .final-points {
+      display: grid;
+      gap: 10px;
+      max-width: 560px;
+    }
+
+    .final-points div {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--date);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .final-points div::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-top: 8px;
+      border-radius: 50%;
+      background: var(--clay);
+      flex: 0 0 auto;
+    }
+
+    .final-panel .image-slot {
+      min-height: 100%;
+      border-radius: 0;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 600ms ease, transform 600ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes slow-drift {
+      from {
+        transform: translate(-1%, 7%);
+      }
+      to {
+        transform: translate(1%, 11%);
+      }
+    }
+
+    @keyframes draw-line {
+      from {
+        transform: scaleY(0);
+      }
+      to {
+        transform: scaleY(1);
+      }
+    }
+
+    @media (max-width: 920px) {
+      .page {
+        width: min(100% - 22px, 760px);
+        padding-top: 14px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .hero-inner,
+      .section-head,
+      .compare-grid,
+      .route-grid,
+      .package-grid,
+      .recommendation,
+      .final-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-inner {
+        padding: 28px;
+      }
+
+      .hero-panel {
+        margin-top: 28px;
+      }
+
+      h1 {
+        margin-top: 28px;
+      }
+
+      .decision-strip,
+      .filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .final-panel .image-slot {
+        min-height: 280px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .nav {
+        display: none;
+      }
+
+      .page {
+        width: calc(100% - 16px);
+      }
+
+      .hero-inner {
+        padding: 22px;
+      }
+
+      .hero-panel,
+      .hero-choice,
+      .decision-card,
+      .card-body,
+      .package,
+      .choice-lab,
+      .route-map,
+      .route-note,
+      .final-copy {
+        padding: 18px;
+      }
+
+      .decision-strip,
+      .metric-list,
+      .included,
+      .filters {
+        grid-template-columns: 1fr;
+      }
+
+      th,
+      td {
+        padding: 13px 11px;
+        font-size: 13px;
+      }
+
+      td:first-child {
+        width: 28%;
+      }
+
+      .price {
+        align-items: flex-start;
+      }
+
+      .package-top,
+      .card-head {
+        flex-direction: column;
+      }
+
+      .share-tools {
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        max-width: none;
+        flex-wrap: wrap;
+      }
+
+      .editor-status {
+        flex-basis: 100%;
+        white-space: normal;
+      }
+
+      .image-action,
+      .hero > .image-action {
+        top: 10px;
+        right: 10px;
+        min-height: 31px;
+        padding: 7px 10px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fbf6ed;
+      }
+
+      .page {
+        width: 100%;
+        padding: 0;
+      }
+
+      .topbar,
+      .filters {
+        display: none;
+      }
+
+      .hero,
+      .surface,
+      .decision-card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+<meta name="robots" content="index,follow">
+  <meta property="og:title" content="Agafay vs Merzouga 沙漠体验选择指南">
+  <meta property="og:description" content="从路程、地形地貌、预算和体验期待，帮助客人选择 Agafay 或 Merzouga。">
+  <link rel="icon" href="data:,">
+  <style>body.published-customer [data-editor-only],body.published-customer .share-tools,body.published-customer .image-file-input,body.published-customer .preview-exit{display:none!important}</style>
+</head>
+<body data-theme="desert" class="customer-ready published-customer">
+  <main class="page">
+    <header class="topbar" aria-label="页面导航">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"></span>
+        <span>Morocco Desert Guide</span>
+      </div>
+      <nav class="nav" aria-label="内容导航">
+        <a href="#quick">快速选择</a>
+        <a href="#compare">核心对比</a>
+        <a href="#route">路程地貌</a>
+        <a href="#package">行程包含</a>
+      </nav>
+    </header>
+
+    <div class="share-tools" data-editor-only>
+      <button class="tool-button primary" type="button" id="customerPreview">客户预览</button>
+      <button class="tool-button primary" type="button" id="exportCustomerHtml">导出客户版</button>
+      <button class="tool-button" type="button" id="copyCustomerLink">复制客户链接</button>
+      <button class="tool-button" type="button" id="textEditMode">编辑文字</button>
+      <button class="tool-button" type="button" id="resetImages">清空配图</button>
+      <div class="theme-picker" aria-label="配色风格" data-editor-only>
+        <button class="theme-button" type="button" data-theme-option="fresh">清新</button>
+        <button class="theme-button" type="button" data-theme-option="desert">沙漠</button>
+        <button class="theme-button" type="button" data-theme-option="sunny">晴朗</button>
+      </div>
+      <span class="editor-status" id="editorStatus">点击“换图”或拖拽图片到画面上</span>
+    </div>
+    <input class="image-file-input" id="imageFileInput" type="file" accept="image/*" hidden data-editor-only>
+    <button class="preview-exit" type="button" id="exitCustomerPreview">退出预览</button>
+
+    <section class="hero reveal" aria-labelledby="page-title" data-image-id="hero" data-image-label="首屏背景" data-image-size="1920x1080">
+      <button class="image-action" type="button" data-image-target="hero" data-editor-only><span>换图</span><small>1920x1080</small></button>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div>
+            <span class="eyebrow">Agafay vs Merzouga</span>
+            <h1 id="page-title">摩洛哥沙漠体验选择指南</h1>
+            <p class="subtitle">Agafay 是离马拉喀什最近的轻量沙漠体验；Merzouga 是真正的撒哈拉沙丘。选择的关键不是哪个更好，而是你的时间、路程承受度和期待画面。</p>
+          </div>
+          <p class="hero-note" data-editor-only>建议配图：整页首屏背景可替换为“沙漠日落、骆驼剪影、远处阿特拉斯山或金色沙丘”的横幅图，建议尺寸 1920x1080，画面留出左侧文字空间。</p>
+        </div>
+
+        <aside class="hero-panel" aria-label="核心结论">
+          <div class="hero-choice">
+            <strong>时间有限，想轻松体验沙漠活动</strong>
+            <p>选 Agafay。马拉喀什出发约 40 分钟至 1 小时，当日往返，适合家庭、老人、小朋友和行程紧张的客人。</p>
+            <div class="pill-row">
+              <span class="pill clay">600元/人</span>
+              <span class="pill">当日往返</span>
+              <span class="pill">晚餐+篝火+骆驼</span>
+            </div>
+          </div>
+          <div class="hero-choice">
+            <strong>想看电影里的真正撒哈拉</strong>
+            <p>选 Merzouga。路途远，但能看到 Erg Chebbi 金色沙丘、沙漠日出日落、星空营地和更完整的公路旅行风景。</p>
+            <div class="pill-row">
+              <span class="pill clay">3天2晚</span>
+              <span class="pill">真沙丘</span>
+              <span class="pill">可到非斯</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="quick" class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">Choose Faster</span>
+          <h2>先用一句话帮客人做判断</h2>
+        </div>
+        <p>把客人的时间、预算和期待画面放在前面，能避免他们只看“沙漠”两个字就误以为体验完全相同。</p>
+      </div>
+
+      <div class="decision-strip">
+        <article class="decision-card">
+          <span class="mini-label">省时间</span>
+          <h3>只有一天，选 Agafay</h3>
+          <p>不用长途奔波，也能完成骑骆驼、沙漠晚餐、篝火晚会和日落拍照。</p>
+        </article>
+        <article class="decision-card">
+          <span class="mini-label">看真沙丘</span>
+          <h3>想要撒哈拉，选 Merzouga</h3>
+          <p>这里才是连绵金色沙丘、骆驼队穿越沙海、星空帐篷的经典摩洛哥画面。</p>
+        </article>
+        <article class="decision-card">
+          <span class="mini-label">走路线</span>
+          <h3>之后去非斯，选单程线</h3>
+          <p>马拉喀什开始，Merzouga 后前往非斯，不走回头路，是很经典的南部穿越路线。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="compare" class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">Side By Side</span>
+          <h2>核心区别一览</h2>
+        </div>
+        <p>Agafay 可以作为 Merzouga 的平替体验，但不是完全替代。一个胜在近和轻松，一个胜在真正沙丘和完整风景。</p>
+      </div>
+
+      <div class="compare-grid">
+        <article class="surface desert-card">
+          <div class="image-slot" data-kind="rock" data-image-id="agafay" data-image-label="Agafay 石质荒漠" data-image-size="1600x900" role="img" aria-label="Agafay 石质荒漠配图占位">
+            <button class="image-action" type="button" data-image-target="agafay" data-editor-only><span>换图</span><small>1600x900</small></button>
+            <div class="slot-caption" data-editor-only>建议配图：Agafay 石质荒漠、月球地貌、荒凉山谷、远眺阿特拉斯山。建议尺寸 1600x900。</div>
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Agafay 沙漠</h3>
+              <span>轻量版体验</span>
+            </div>
+            <p>更像“距离城市最近的沙漠体验”。地貌以岩石、砾石和荒原为主，适合时间有限、不想坐很久车但想体验沙漠活动的客人。</p>
+            <div class="metric-list">
+              <div class="metric">
+                <b>30-40km</b>
+                <small>距离马拉喀什较近</small>
+              </div>
+              <div class="metric">
+                <b>40-60min</b>
+                <small>单程车程较短</small>
+              </div>
+              <div class="metric">
+                <b>1天</b>
+                <small>半天、一天或一晚都可安排</small>
+              </div>
+              <div class="metric">
+                <b>600元</b>
+                <small>当日往返跟团价/人</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="surface desert-card">
+          <div class="image-slot" data-kind="dunes" data-image-id="merzouga" data-image-label="Merzouga 金色沙丘" data-image-size="1600x900" role="img" aria-label="Merzouga 金色沙丘配图占位">
+            <button class="image-action" type="button" data-image-target="merzouga" data-editor-only><span>换图</span><small>1600x900</small></button>
+            <div class="slot-caption" data-editor-only>建议配图：Merzouga Erg Chebbi 金色沙丘、骆驼队、日落或沙漠营地星空。建议尺寸 1600x900。</div>
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Merzouga 撒哈拉</h3>
+              <span>真正沙丘</span>
+            </div>
+            <p>摩洛哥最经典的撒哈拉目的地之一。路途远，但能获得真正沙漠纵深感，也会穿越南部山脉、峡谷和电影取景地。</p>
+            <div class="metric-list">
+              <div class="metric">
+                <b>550-560km</b>
+                <small>距离马拉喀什较远</small>
+              </div>
+              <div class="metric">
+                <b>9-10h</b>
+                <small>单程实际驾驶时间长</small>
+              </div>
+              <div class="metric">
+                <b>3天2晚</b>
+                <small>推荐至少预留三天</small>
+              </div>
+              <div class="metric">
+                <b>2路线</b>
+                <small>往返马拉喀什或非斯结束</small>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="surface table-wrap" aria-label="Agafay 与 Merzouga 对比表">
+        <table>
+          <thead>
+            <tr>
+              <th>对比项目</th>
+              <th>Agafay 沙漠</th>
+              <th>Merzouga 撒哈拉沙漠</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>沙漠类型</td>
+              <td>石质荒漠，岩石、砾石、荒原和月球地貌。</td>
+              <td>真正的撒哈拉沙丘，Erg Chebbi 金色沙丘区域。</td>
+            </tr>
+            <tr>
+              <td>路程</td>
+              <td>约 30-40 公里，单程约 40 分钟至 1 小时。</td>
+              <td>约 550-560 公里，单程约 9-10 小时。</td>
+            </tr>
+            <tr>
+              <td>推荐时间</td>
+              <td>半天、一天或一晚，当日往返最轻松。</td>
+              <td>至少 3 天 2 晚，更适合深度行程。</td>
+            </tr>
+            <tr>
+              <td>主要体验</td>
+              <td>日落、营地晚餐、篝火晚会、骆驼骑行体验。</td>
+              <td>沙丘日出日落、骑骆驼、滑沙、沙漠露营、星空。</td>
+            </tr>
+            <tr>
+              <td>适合人群</td>
+              <td>时间有限、家庭、老人、小朋友、不想长途坐车的客人。</td>
+              <td>第一次来摩洛哥、想体验真正撒哈拉、能接受长途车程的客人。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="route" class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">Route & Landscape</span>
+          <h2>路程和地形，决定体验差异</h2>
+        </div>
+        <p>Merzouga 不是单纯“去沙漠”，而是一条穿越摩洛哥南部自然景观的公路旅行；Agafay 则是把沙漠氛围压缩进一天。</p>
+      </div>
+
+      <div class="route-grid">
+        <article class="surface route-map" data-image-id="route-map" data-image-label="Merzouga 路线框背景" data-image-size="1200x1500">
+          <button class="image-action" type="button" data-image-target="route-map" data-editor-only><span>换图</span><small>1200x1500</small></button>
+          <h3>Merzouga 经典三天线路</h3>
+          <div class="route-line">
+            <div class="stop">
+              <b>马拉喀什</b>
+              <span>出发，开始南部公路旅行。</span>
+            </div>
+            <div class="stop">
+              <b>高阿特拉斯山脉</b>
+              <span>翻越海拔超过 2000 米的山口，可见山谷、季节性雪山和柏柏尔村庄。</span>
+            </div>
+            <div class="stop">
+              <b>瓦尔扎扎特地区</b>
+              <span>电影取景地氛围浓厚，适合安排途中停留。</span>
+            </div>
+            <div class="stop">
+              <b>Dades / Todra 峡谷</b>
+              <span>红色岩壁峡谷，是前往沙漠途中的自然景观重点。</span>
+            </div>
+            <div class="stop">
+              <b>Merzouga 撒哈拉</b>
+              <span>进入 Erg Chebbi 金色沙丘，体验骆驼、滑沙、营地和星空。</span>
+            </div>
+            <div class="stop">
+              <b>返回马拉喀什或前往非斯</b>
+              <span>可选往返线，也可选非斯结束，不走回头路。</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="route-copy">
+          <article class="surface route-note">
+            <span class="mini-label">Agafay 路程感</span>
+            <h3>距离短，活动集中，适合加进马拉喀什行程</h3>
+            <p>从马拉喀什出发约 40 分钟左右抵达，可以当天往返。适合只停留 2-3 天、想增加一个沙漠主题体验但不想每天坐车几个小时的客人。</p>
+          </article>
+          <article class="surface route-note">
+            <span class="mini-label">Merzouga 路程感</span>
+            <h3>路途远，但风景层次完整</h3>
+            <p>长车程是成本，也是价值的一部分。途中会穿越山脉、村庄、峡谷和电影取景地，最后抵达真正的撒哈拉沙丘。</p>
+          </article>
+          <div class="image-slot" data-kind="rock" data-image-id="route" data-image-label="南部公路旅行" data-image-size="1400x800" style="min-height: 210px;" role="img" aria-label="南部公路旅行配图占位">
+            <button class="image-action" type="button" data-image-target="route" data-editor-only><span>换图</span><small>1400x800</small></button>
+            <div class="slot-caption" data-editor-only>建议配图：阿特拉斯山路、峡谷公路、瓦尔扎扎特或途中柏柏尔村庄。建议尺寸 1400x800。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="package" class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">Tour Options</span>
+          <h2>我们的沙漠团怎么选</h2>
+        </div>
+        <p>把包含项目写清楚，客人会更容易理解价格背后的体验差异。</p>
+      </div>
+
+      <div class="package-grid">
+        <article class="surface package">
+          <div class="package-top">
+            <div>
+              <span class="mini-label">Agafay 当日往返</span>
+              <h3>马拉喀什 - Agafay - 马拉喀什</h3>
+            </div>
+            <div class="price">600元<small>/人</small></div>
+          </div>
+          <ul class="included" aria-label="Agafay 包含项目">
+            <li>往返交通</li>
+            <li>沙漠营地晚餐</li>
+            <li>篝火晚会</li>
+            <li>骆驼骑行体验</li>
+          </ul>
+          <p>适合：只有一天时间，也想拥有一次摩洛哥沙漠体验的客人。</p>
+        </article>
+
+        <article class="surface package featured">
+          <div class="package-top">
+            <div>
+              <span class="mini-label">Merzouga 三天两夜</span>
+              <h3>马拉喀什往返 / 马拉喀什开始非斯结束</h3>
+            </div>
+          </div>
+          <ul class="included" aria-label="Merzouga 包含项目">
+            <li>交通</li>
+            <li>两晚住宿</li>
+            <li>2 天早餐</li>
+            <li>2 天晚餐</li>
+            <li>沙漠营地住宿</li>
+            <li>篝火晚会</li>
+            <li>骆驼骑行</li>
+            <li>滑沙体验</li>
+          </ul>
+          <p>适合：时间充裕、想看真正撒哈拉，或后续计划去非斯、不想走回头路的客人。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="surface choice-lab" aria-label="互动选择建议">
+        <div class="section-head" style="margin-bottom: 0;">
+          <div>
+            <span class="section-kicker">Decision Helper</span>
+            <h2>按客人的一句话快速推荐</h2>
+          </div>
+          <p>点击不同需求，页面会切换推荐结论。发给客人时，也可以直接截图对应状态。</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="选择旅行需求">
+          <button class="filter is-active" type="button" data-choice="day">我只有一天</button>
+          <button class="filter" type="button" data-choice="sahara">我想看真沙丘</button>
+          <button class="filter" type="button" data-choice="family">我不想久坐车</button>
+          <button class="filter" type="button" data-choice="fes">我后面去非斯</button>
+        </div>
+
+        <div class="recommendation" aria-live="polite">
+          <div class="decision-image-store" aria-hidden="true">
+            <span data-image-id="decision-day" data-image-label="推荐小框背景 - 我只有一天" data-image-size="1200x650"></span>
+            <span data-image-id="decision-sahara" data-image-label="推荐小框背景 - 我想看真沙丘" data-image-size="1200x650"></span>
+            <span data-image-id="decision-family" data-image-label="推荐小框背景 - 我不想久坐车" data-image-size="1200x650"></span>
+            <span data-image-id="decision-fes" data-image-label="推荐小框背景 - 我后面去非斯" data-image-size="1200x650"></span>
+          </div>
+          <div class="result-badge" data-decision-visual="decision-day" data-image-size="1200x650">
+            <button class="image-action" type="button" data-image-target="decision-day" data-editor-only><span>换图</span><small>1200x650</small></button>
+            <div>
+              <b id="result-title">Agafay</b>
+              <span id="result-tag">方便、省时间、活动集中</span>
+            </div>
+          </div>
+          <div class="result-copy">
+            <h3 id="result-heading">推荐 Agafay 沙漠当日往返</h3>
+            <p id="result-text">如果客人只有一天时间，不想把时间花在长途车程上，Agafay 是更合适的选择。它不是传统沙丘沙漠，但能体验骆驼、晚餐、篝火和日落，行程轻松。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surface final-panel reveal">
+      <div class="final-copy">
+        <span class="section-kicker">Final Advice</span>
+        <h2>最终建议</h2>
+        <p>Agafay 是 Merzouga 的轻量版沙漠体验，不是完全替代。如果客人时间有限、不想花两天在路上，Agafay 可以用一天时间体验摩洛哥沙漠文化；如果梦想是骑骆驼走进撒哈拉，看太阳落在金色沙丘后面，晚上睡在沙漠星空下，那么一定选择 Merzouga。</p>
+        <div class="final-points">
+          <div>想方便、省时间：Agafay</div>
+          <div>想看真正撒哈拉：Merzouga</div>
+          <div>想拍大片和体验活动：两者都值得，只是体验完全不同</div>
+        </div>
+      </div>
+      <div class="image-slot" data-kind="dunes" data-image-id="final" data-image-label="最终转化画面" data-image-size="900x1200" role="img" aria-label="最终建议配图占位">
+        <button class="image-action" type="button" data-image-target="final" data-editor-only><span>换图</span><small>900x1200</small></button>
+        <div class="slot-caption" data-editor-only>建议配图：金色沙丘日落、星空营地或客人骑骆驼背影。建议尺寸 900x1200。</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="crop-modal" id="cropModal" aria-hidden="true" data-editor-only>
+    <div class="crop-panel" role="dialog" aria-modal="true" aria-labelledby="cropTitle">
+      <div class="crop-head">
+        <div>
+          <h3 id="cropTitle">裁剪配图</h3>
+          <p id="cropHint">拖拽图片调整位置，用滑杆调整大小。</p>
+        </div>
+        <button class="tool-button" type="button" id="cropCancel">取消</button>
+      </div>
+      <div class="crop-stage-wrap">
+        <div class="crop-stage" id="cropStage">
+          <img id="cropImage" alt="待裁剪图片">
+        </div>
+      </div>
+      <div class="crop-controls">
+        <label class="crop-zoom" for="cropZoom">
+          图片大小
+          <input id="cropZoom" type="range" min="1" max="3" step="0.01" value="1">
+        </label>
+        <div class="crop-actions">
+          <button class="tool-button" type="button" id="cropFit">居中填满</button>
+          <button class="tool-button primary" type="button" id="cropApply">使用裁剪</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const IMAGE_CACHE_KEY = "desertGuideImages:v1";
+    const THEME_CACHE_KEY = "desertGuideTheme:v1";
+    const TEXT_CACHE_KEY = "desertGuideText:v1";
+    const SHARE_HASH_PREFIX = "#client=";
+    const MAX_IMAGE_SIDE = 1400;
+    const JPEG_QUALITY = 0.78;
+    const CROP_MIN_SCALE_FACTOR = 0.25;
+    const THEME_OPTIONS = new Set(["fresh", "desert", "sunny"]);
+    const EDITABLE_TEXT_SELECTOR = [
+      ".page h1",
+      ".page h2",
+      ".page h3",
+      ".page p",
+      ".page b",
+      ".page small",
+      ".page th",
+      ".page td",
+      ".page li",
+      ".page a",
+      ".page span",
+      ".page button.filter",
+      ".page .final-points div",
+      ".page .brand span",
+      ".page .eyebrow",
+      ".page .pill",
+      ".page .mini-label",
+      ".page .section-kicker",
+      ".page .slot-caption",
+      ".page .result-badge span"
+    ].join(",");
+    const imageInput = document.querySelector("#imageFileInput");
+    const editorStatus = document.querySelector("#editorStatus");
+    const cropModal = document.querySelector("#cropModal");
+    const cropStage = document.querySelector("#cropStage");
+    const cropImage = document.querySelector("#cropImage");
+    const cropZoom = document.querySelector("#cropZoom");
+    const cropTitle = document.querySelector("#cropTitle");
+    const cropHint = document.querySelector("#cropHint");
+    const customImages = {};
+    let activeImageId = null;
+    let cropState = null;
+
+    function setStatus(message) {
+      if (editorStatus) editorStatus.textContent = message;
+    }
+
+    function getImageSlot(id) {
+      return document.querySelector(`[data-image-id="${id}"]`);
+    }
+
+    function applyTheme(theme, options = {}) {
+      const nextTheme = THEME_OPTIONS.has(theme) ? theme : "desert";
+      document.body.dataset.theme = nextTheme;
+      document.querySelectorAll("[data-theme-option]").forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.themeOption === nextTheme);
+      });
+
+      if (options.persist !== false) {
+        localStorage.setItem(THEME_CACHE_KEY, nextTheme);
+      }
+    }
+
+    function restoreTheme() {
+      applyTheme(localStorage.getItem(THEME_CACHE_KEY) || document.body.dataset.theme || "desert", { persist: false });
+    }
+
+    function editableTextElements() {
+      return Array.from(document.querySelectorAll(EDITABLE_TEXT_SELECTOR)).filter((element) => {
+        if (element.closest("[data-editor-only]")) return false;
+        if (element.closest(".crop-modal")) return false;
+        if (!element.textContent.trim()) return false;
+        return true;
+      });
+    }
+
+    function assignEditableTextIds() {
+      editableTextElements().forEach((element, index) => {
+        if (!element.dataset.editableText) {
+          element.dataset.editableText = `text-${index + 1}`;
+        }
+      });
+    }
+
+    function readTextEdits() {
+      const text = {};
+      document.querySelectorAll("[data-editable-text]").forEach((element) => {
+        text[element.dataset.editableText] = element.textContent;
+      });
+      return text;
+    }
+
+    function saveTextEdits() {
+      localStorage.setItem(TEXT_CACHE_KEY, JSON.stringify(readTextEdits()));
+    }
+
+    function restoreTextEdits(text = null) {
+      let savedText = text;
+      if (!savedText) {
+        try {
+          savedText = JSON.parse(localStorage.getItem(TEXT_CACHE_KEY) || "{}");
+        } catch {
+          savedText = {};
+        }
+      }
+
+      Object.entries(savedText || {}).forEach(([id, value]) => {
+        const element = document.querySelector(`[data-editable-text="${id}"]`);
+        if (element && typeof value === "string") {
+          element.textContent = value;
+        }
+      });
+    }
+
+    function enableTextEditing() {
+      assignEditableTextIds();
+      document.querySelectorAll("[data-editable-text]").forEach((element) => {
+        element.setAttribute("contenteditable", "plaintext-only");
+        element.setAttribute("spellcheck", "false");
+      });
+      document.body.classList.add("text-edit-mode");
+      document.querySelector("#textEditMode").textContent = "完成文字";
+      setStatus("文字编辑已开启，直接点击页面文字修改");
+    }
+
+    function disableTextEditing(options = {}) {
+      document.querySelectorAll("[data-editable-text]").forEach((element) => {
+        element.removeAttribute("contenteditable");
+        element.removeAttribute("spellcheck");
+      });
+      document.body.classList.remove("text-edit-mode");
+      document.querySelector("#textEditMode").textContent = "编辑文字";
+      if (options.save !== false) saveTextEdits();
+      if (!options.quiet) setStatus("文字已保存，可继续编辑图片或预览客户版");
+    }
+
+    function toggleTextEditing() {
+      if (document.body.classList.contains("text-edit-mode")) {
+        disableTextEditing();
+      } else {
+        enableTextEditing();
+      }
+    }
+
+    function imageVariableFor(slot) {
+      return slot.classList.contains("hero") ? "--hero-image" : "--slot-image";
+    }
+
+    function isDecisionImageId(id) {
+      return typeof id === "string" && id.startsWith("decision-");
+    }
+
+    function syncDecisionImageSlot(id = null) {
+      const badge = document.querySelector("[data-decision-visual]");
+      if (!badge) return;
+
+      const nextId = id || badge.dataset.decisionVisual || "decision-day";
+      const storeSlot = getImageSlot(nextId);
+      badge.dataset.decisionVisual = nextId;
+      badge.dataset.imageSize = storeSlot?.dataset.imageSize || "1200x650";
+
+      const action = badge.querySelector(".image-action");
+      if (action) {
+        action.dataset.imageTarget = nextId;
+      }
+
+      const imageValue = storeSlot?.style.getPropertyValue("--slot-image");
+      if (imageValue) {
+        badge.style.setProperty("--slot-image", imageValue);
+        badge.classList.add("has-custom-image");
+      } else {
+        badge.style.removeProperty("--slot-image");
+        badge.classList.remove("has-custom-image");
+      }
+    }
+
+    function applyImageToSlot(id, dataUrl) {
+      const slot = getImageSlot(id);
+      if (!slot || !dataUrl) return false;
+      slot.style.setProperty(imageVariableFor(slot), `url("${dataUrl}")`);
+      slot.classList.add("has-custom-image");
+      customImages[id] = dataUrl;
+      if (isDecisionImageId(id)) {
+        syncDecisionImageSlot(id);
+      }
+      return true;
+    }
+
+    function readCachedImages() {
+      try {
+        return JSON.parse(localStorage.getItem(IMAGE_CACHE_KEY) || "{}");
+      } catch {
+        return {};
+      }
+    }
+
+    function cacheImage(id, dataUrl) {
+      const nextCache = { ...readCachedImages(), [id]: dataUrl };
+      localStorage.setItem(IMAGE_CACHE_KEY, JSON.stringify(nextCache));
+    }
+
+    function restoreCachedImages() {
+      const cachedImages = readCachedImages();
+      Object.entries(cachedImages).forEach(([id, dataUrl]) => applyImageToSlot(id, dataUrl));
+      if (Object.keys(cachedImages).length) {
+        setStatus("已恢复上次替换的配图");
+      }
+    }
+
+    function restoreSharedImages() {
+      if (!window.location.hash.startsWith(SHARE_HASH_PREFIX)) return false;
+
+      try {
+        const payload = JSON.parse(window.decodeURIComponent(window.location.hash.slice(SHARE_HASH_PREFIX.length)));
+        applyTheme(payload.theme, { persist: false });
+        restoreTextEdits(payload.text || {});
+        document.body.classList.add("customer-ready");
+        Object.entries(payload.images || {}).forEach(([id, dataUrl]) => applyImageToSlot(id, dataUrl));
+        return true;
+      } catch {
+        setStatus("客户链接里的图片数据无法读取");
+        return false;
+      }
+    }
+
+    function loadImage(url) {
+      return new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = () => resolve(image);
+        image.onerror = reject;
+        image.src = url;
+      });
+    }
+
+    function parseImageSize(slot) {
+      const rawSize = slot?.dataset.imageSize || "1600x900";
+      const [width, height] = rawSize.split("x").map((value) => Number.parseInt(value, 10));
+      return {
+        width: Number.isFinite(width) && width > 0 ? width : 1600,
+        height: Number.isFinite(height) && height > 0 ? height : 900
+      };
+    }
+
+    function outputImageSize(targetSize) {
+      const scale = Math.min(1, MAX_IMAGE_SIDE / Math.max(targetSize.width, targetSize.height));
+      return {
+        width: Math.max(1, Math.round(targetSize.width * scale)),
+        height: Math.max(1, Math.round(targetSize.height * scale))
+      };
+    }
+
+    function renderCropImage() {
+      if (!cropState) return;
+
+      cropState = clampCropPosition(cropState);
+      cropImage.style.width = `${cropState.image.naturalWidth * cropState.scale}px`;
+      cropImage.style.height = `${cropState.image.naturalHeight * cropState.scale}px`;
+      cropImage.style.transform = `translate(${cropState.x}px, ${cropState.y}px)`;
+    }
+
+    function clampCropPosition(nextState) {
+      if (!cropStage || !nextState) return nextState;
+
+      const stageRect = cropStage.getBoundingClientRect();
+      const displayWidth = nextState.image.naturalWidth * nextState.scale;
+      const displayHeight = nextState.image.naturalHeight * nextState.scale;
+      const minX = Math.min(0, stageRect.width - displayWidth);
+      const maxX = displayWidth <= stageRect.width ? stageRect.width - displayWidth : 0;
+      const minY = Math.min(0, stageRect.height - displayHeight);
+      const maxY = displayHeight <= stageRect.height ? stageRect.height - displayHeight : 0;
+
+      nextState.x = Math.min(maxX, Math.max(minX, nextState.x));
+      nextState.y = Math.min(maxY, Math.max(minY, nextState.y));
+
+      return nextState;
+    }
+
+    function fitCropImage() {
+      if (!cropState || !cropStage) return;
+
+      const stageRect = cropStage.getBoundingClientRect();
+      const fillScale = Math.max(
+        stageRect.width / cropState.image.naturalWidth,
+        stageRect.height / cropState.image.naturalHeight
+      );
+      const minScale = fillScale * CROP_MIN_SCALE_FACTOR;
+      cropState.minScale = minScale;
+      cropState.maxScale = fillScale * 4;
+      cropState.scale = fillScale;
+      cropState.x = (stageRect.width - cropState.image.naturalWidth * fillScale) / 2;
+      cropState.y = (stageRect.height - cropState.image.naturalHeight * fillScale) / 2;
+
+      cropZoom.min = String(minScale);
+      cropZoom.max = String(cropState.maxScale);
+      cropZoom.step = String(Math.max(0.001, minScale / 120));
+      cropZoom.value = String(fillScale);
+      renderCropImage();
+    }
+
+    async function showCropEditor(imageUrl, id, objectUrlToRevoke = null) {
+      const slot = getImageSlot(id);
+      if (!slot) return;
+
+      try {
+        const image = await loadImage(imageUrl);
+        const targetSize = parseImageSize(slot);
+        closeCropEditor({ keepStatus: true });
+        cropState = {
+          id,
+          objectUrl: objectUrlToRevoke,
+          image,
+          targetSize,
+          minScale: 1,
+          maxScale: 4,
+          scale: 1,
+          x: 0,
+          y: 0,
+          dragStartX: 0,
+          dragStartY: 0,
+          startX: 0,
+          startY: 0,
+          dragging: false
+        };
+
+        cropTitle.textContent = `裁剪：${slot.dataset.imageLabel || "配图"}`;
+        cropHint.textContent = `目标尺寸 ${targetSize.width}x${targetSize.height}。拖拽图片调整位置，用滑杆调整大小。`;
+        cropStage.style.aspectRatio = `${targetSize.width} / ${targetSize.height}`;
+        cropImage.src = imageUrl;
+        cropModal.classList.add("is-open");
+        cropModal.setAttribute("aria-hidden", "false");
+        setStatus("正在裁剪图片，调整后点击“使用裁剪”");
+        requestAnimationFrame(fitCropImage);
+      } catch (error) {
+        if (objectUrlToRevoke) URL.revokeObjectURL(objectUrlToRevoke);
+        throw error;
+      }
+    }
+
+    async function openCropEditor(file, id) {
+      if (!file || !file.type.startsWith("image/")) {
+        throw new Error("请选择图片文件");
+      }
+
+      const objectUrl = URL.createObjectURL(file);
+      await showCropEditor(objectUrl, id, objectUrl);
+    }
+
+    async function openCropEditorFromDataUrl(dataUrl, id) {
+      await showCropEditor(dataUrl, id);
+    }
+
+    function closeCropEditor(options = {}) {
+      if (cropState?.objectUrl) {
+        URL.revokeObjectURL(cropState.objectUrl);
+      }
+
+      cropState = null;
+      if (cropModal) {
+        cropModal.classList.remove("is-open");
+        cropModal.setAttribute("aria-hidden", "true");
+      }
+      if (cropImage) {
+        cropImage.removeAttribute("src");
+        cropImage.removeAttribute("style");
+      }
+      cropStage?.classList.remove("is-dragging");
+
+      if (!options.keepStatus) {
+        setStatus("已取消裁剪");
+      }
+    }
+
+    function drawCroppedImage() {
+      if (!cropState || !cropStage) return null;
+
+      cropState = clampCropPosition(cropState);
+      const stageRect = cropStage.getBoundingClientRect();
+      const targetSize = outputImageSize(cropState.targetSize);
+      const canvas = document.createElement("canvas");
+      canvas.width = targetSize.width;
+      canvas.height = targetSize.height;
+
+      const destinationX = cropState.x / stageRect.width * targetSize.width;
+      const destinationY = cropState.y / stageRect.height * targetSize.height;
+      const destinationWidth = cropState.image.naturalWidth * cropState.scale / stageRect.width * targetSize.width;
+      const destinationHeight = cropState.image.naturalHeight * cropState.scale / stageRect.height * targetSize.height;
+      const context = canvas.getContext("2d");
+      context.fillStyle = "#f8ecda";
+      context.fillRect(0, 0, targetSize.width, targetSize.height);
+      context.drawImage(
+        cropState.image,
+        destinationX,
+        destinationY,
+        destinationWidth,
+        destinationHeight
+      );
+
+      return canvas.toDataURL("image/jpeg", JPEG_QUALITY);
+    }
+
+    function applyCroppedImage() {
+      if (!cropState) return;
+
+      const id = cropState.id;
+      const dataUrl = drawCroppedImage();
+      if (!dataUrl) return;
+
+      applyImageToSlot(id, dataUrl);
+      try {
+        cacheImage(id, dataUrl);
+        setStatus("裁剪后的图片已替换并缓存在当前浏览器");
+      } catch {
+        setStatus("裁剪后的图片已替换，但缓存空间不足；请导出客户版");
+      }
+      closeCropEditor({ keepStatus: true });
+    }
+
+    function zoomCropImage() {
+      if (!cropState || !cropStage) return;
+
+      const stageRect = cropStage.getBoundingClientRect();
+      const oldScale = cropState.scale;
+      const nextScale = Number.parseFloat(cropZoom.value);
+      const centerX = (stageRect.width / 2 - cropState.x) / oldScale;
+      const centerY = (stageRect.height / 2 - cropState.y) / oldScale;
+      cropState.scale = Math.min(cropState.maxScale, Math.max(cropState.minScale, nextScale));
+      cropState.x = stageRect.width / 2 - centerX * cropState.scale;
+      cropState.y = stageRect.height / 2 - centerY * cropState.scale;
+      renderCropImage();
+    }
+
+    function startCropDrag(event) {
+      if (!cropState) return;
+      event.preventDefault();
+      cropState.dragging = true;
+      cropState.dragStartX = event.clientX;
+      cropState.dragStartY = event.clientY;
+      cropState.startX = cropState.x;
+      cropState.startY = cropState.y;
+      cropStage.classList.add("is-dragging");
+      cropStage.setPointerCapture?.(event.pointerId);
+    }
+
+    function moveCropDrag(event) {
+      if (!cropState?.dragging) return;
+      event.preventDefault();
+      cropState.x = cropState.startX + event.clientX - cropState.dragStartX;
+      cropState.y = cropState.startY + event.clientY - cropState.dragStartY;
+      renderCropImage();
+    }
+
+    function endCropDrag(event) {
+      if (!cropState) return;
+      cropState.dragging = false;
+      cropStage.classList.remove("is-dragging");
+      cropStage.releasePointerCapture?.(event.pointerId);
+    }
+
+    async function handleImageFile(file, id) {
+      if (!id) return;
+
+      try {
+        setStatus("正在打开裁剪器...");
+        await openCropEditor(file, id);
+      } catch (error) {
+        setStatus(error.message || "图片读取失败，请换一张图");
+      }
+    }
+
+    function clearDragState() {
+      document.querySelectorAll(".is-dragging").forEach((slot) => slot.classList.remove("is-dragging"));
+    }
+
+    function exportCustomerHtml() {
+      if (document.body.classList.contains("text-edit-mode")) {
+        disableTextEditing({ quiet: true });
+      }
+      const clone = document.documentElement.cloneNode(true);
+      const clonedBody = clone.querySelector("body");
+      clonedBody?.classList.add("customer-ready");
+      clonedBody?.classList.remove("preview-mode", "text-edit-mode");
+      clone.querySelectorAll("[data-editor-only], .image-file-input, .preview-exit").forEach((element) => element.remove());
+      clone.querySelectorAll("[contenteditable]").forEach((element) => {
+        element.removeAttribute("contenteditable");
+        element.removeAttribute("spellcheck");
+      });
+      clone.querySelectorAll(".is-dragging").forEach((element) => element.classList.remove("is-dragging"));
+      return `<!doctype html>\n${clone.outerHTML}`;
+    }
+
+    function enterCustomerPreview() {
+      closeCropEditor({ keepStatus: true });
+      if (document.body.classList.contains("text-edit-mode")) {
+        disableTextEditing({ quiet: true });
+      }
+      document.body.classList.add("customer-ready", "preview-mode");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function exitCustomerPreview() {
+      document.body.classList.remove("customer-ready", "preview-mode");
+      setStatus("已退出客户预览，可继续编辑");
+    }
+
+    function downloadCustomerHtml() {
+      const html = exportCustomerHtml();
+      const blob = new Blob([html], { type: "text/html;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "morocco-desert-guide-client.html";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(link.href);
+      setStatus("客户版 HTML 已生成");
+    }
+
+    async function copyCustomerLink() {
+      if (document.body.classList.contains("text-edit-mode")) {
+        disableTextEditing({ quiet: true });
+      }
+      const payload = { version: 1, theme: document.body.dataset.theme || "desert", images: customImages, text: readTextEdits() };
+      const url = `${window.location.href.split("#")[0]}${SHARE_HASH_PREFIX}${window.encodeURIComponent(JSON.stringify(payload))}`;
+
+      if (url.length > 1800000) {
+        setStatus("图片数据较大，链接太长；请使用“导出客户版”");
+        return;
+      }
+
+      try {
+        await navigator.clipboard.writeText(url);
+        setStatus("客户链接已复制；对方打开后不显示编辑按钮");
+      } catch {
+        setStatus("浏览器不允许自动复制，请使用“导出客户版”");
+      }
+    }
+
+    document.querySelectorAll(".image-action").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.stopPropagation();
+        activeImageId = button.dataset.imageTarget;
+        imageInput?.click();
+      });
+    });
+
+    document.querySelectorAll("[data-theme-option]").forEach((button) => {
+      button.addEventListener("click", () => {
+        applyTheme(button.dataset.themeOption);
+        setStatus(`已切换为${button.textContent.trim()}配色`);
+      });
+    });
+
+    cropZoom?.addEventListener("input", zoomCropImage);
+    cropStage?.addEventListener("pointerdown", startCropDrag);
+    cropStage?.addEventListener("pointermove", moveCropDrag);
+    cropStage?.addEventListener("pointerup", endCropDrag);
+    cropStage?.addEventListener("pointercancel", endCropDrag);
+    cropStage?.addEventListener("pointerleave", endCropDrag);
+    document.querySelector("#cropApply")?.addEventListener("click", applyCroppedImage);
+    document.querySelector("#cropCancel")?.addEventListener("click", () => closeCropEditor());
+    document.querySelector("#cropFit")?.addEventListener("click", fitCropImage);
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && cropModal?.classList.contains("is-open")) {
+        closeCropEditor();
+      }
+    });
+
+    imageInput?.addEventListener("change", () => {
+      const file = imageInput.files?.[0];
+      handleImageFile(file, activeImageId);
+      imageInput.value = "";
+    });
+
+    document.querySelectorAll("[data-image-id]").forEach((slot) => {
+      slot.addEventListener("dragenter", (event) => {
+        event.preventDefault();
+        slot.classList.add("is-dragging");
+      });
+
+      slot.addEventListener("dragover", (event) => {
+        event.preventDefault();
+      });
+
+      slot.addEventListener("dragleave", (event) => {
+        if (!slot.contains(event.relatedTarget)) slot.classList.remove("is-dragging");
+      });
+
+      slot.addEventListener("drop", (event) => {
+        event.preventDefault();
+        clearDragState();
+        const file = event.dataTransfer?.files?.[0];
+        handleImageFile(file, slot.dataset.imageId);
+      });
+    });
+
+    document.querySelector("#exportCustomerHtml")?.addEventListener("click", downloadCustomerHtml);
+    document.querySelector("#copyCustomerLink")?.addEventListener("click", copyCustomerLink);
+    document.querySelector("#customerPreview")?.addEventListener("click", enterCustomerPreview);
+    document.querySelector("#exitCustomerPreview")?.addEventListener("click", exitCustomerPreview);
+    document.querySelector("#textEditMode")?.addEventListener("click", toggleTextEditing);
+    document.addEventListener("click", (event) => {
+      if (!document.body.classList.contains("text-edit-mode")) return;
+      if (event.target.closest("[data-editable-text]")) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    }, true);
+    document.addEventListener("input", (event) => {
+      if (event.target.closest("[data-editable-text]")) {
+        saveTextEdits();
+      }
+    });
+    document.addEventListener("paste", (event) => {
+      const editable = event.target.closest("[data-editable-text]");
+      if (!editable) return;
+      event.preventDefault();
+      document.execCommand("insertText", false, event.clipboardData.getData("text/plain"));
+      saveTextEdits();
+    });
+    document.querySelector("#resetImages")?.addEventListener("click", () => {
+      closeCropEditor({ keepStatus: true });
+      localStorage.removeItem(IMAGE_CACHE_KEY);
+      Object.keys(customImages).forEach((key) => delete customImages[key]);
+      document.querySelectorAll("[data-image-id]").forEach((slot) => {
+        slot.style.removeProperty(imageVariableFor(slot));
+        slot.classList.remove("has-custom-image", "is-dragging");
+      });
+      syncDecisionImageSlot("decision-day");
+      setStatus("已清空当前浏览器缓存的配图");
+    });
+
+    window.__desertGuideEditor = {
+      openCropEditor,
+      openCropEditorFromDataUrl,
+      applyCroppedImage,
+      closeCropEditor,
+      fitCropImage,
+      parseImageSize,
+      drawCroppedImage
+    };
+
+    assignEditableTextIds();
+    restoreTheme();
+
+    if (!restoreSharedImages()) {
+      restoreTextEdits();
+      restoreCachedImages();
+    }
+    syncDecisionImageSlot("decision-day");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+    const recommendations = {
+      day: {
+        title: "Agafay",
+        tag: "方便、省时间、活动集中",
+        heading: "推荐 Agafay 沙漠当日往返",
+        text: "如果客人只有一天时间，不想把时间花在长途车程上，Agafay 是更合适的选择。它不是传统沙丘沙漠，但能体验骆驼、晚餐、篝火和日落，行程轻松。"
+      },
+      sahara: {
+        title: "Merzouga",
+        tag: "真正撒哈拉、金色沙丘",
+        heading: "推荐 Merzouga 三天两夜",
+        text: "如果客人心里的沙漠是一望无际的黄色沙海、骆驼队、沙漠日落和星空帐篷，就应该选择 Merzouga。路途更远，但体验更完整。"
+      },
+      family: {
+        title: "Agafay",
+        tag: "少坐车、适合轻松体验",
+        heading: "推荐 Agafay，尤其适合家庭和长辈",
+        text: "如果同行有老人、小朋友，或客人明确不想每天坐车几个小时，Agafay 的短距离优势很明显。它适合作为马拉喀什行程中的特色体验。"
+      },
+      fes: {
+        title: "Merzouga",
+        tag: "马拉喀什开始，非斯结束",
+        heading: "推荐 Merzouga 非斯结束路线",
+        text: "如果客人后续计划去非斯，选择马拉喀什到 Merzouga 再到非斯的路线更顺，不用回头。它也是很多游客认为最经典的摩洛哥线路之一。"
+      }
+    };
+
+    const resultTitle = document.querySelector("#result-title");
+    const resultTag = document.querySelector("#result-tag");
+    const resultHeading = document.querySelector("#result-heading");
+    const resultText = document.querySelector("#result-text");
+
+    document.querySelectorAll(".filter").forEach((button) => {
+      button.addEventListener("click", () => {
+        const choice = recommendations[button.dataset.choice];
+        if (!choice) return;
+
+        document.querySelectorAll(".filter").forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        resultTitle.textContent = choice.title;
+        resultTag.textContent = choice.tag;
+        resultHeading.textContent = choice.heading;
+        resultText.textContent = choice.text;
+        syncDecisionImageSlot(`decision-${button.dataset.choice}`);
+      });
+    });
+  </script>
+<script>
+    (() => {
+      const publishedState = {"theme":"fresh","text":{"text-1":"Morocco Desert Guide","text-2":"快速选择","text-3":"核心对比","text-4":"路程地貌","text-5":"行程包含","text-6":"Agafay vs Merzouga","text-7":"摩洛哥沙漠体验选择指南","text-8":"Agafay （阿加菲）是离马拉喀什最近的轻量沙漠体验；Merzouga 是真正的撒哈拉沙丘。选择的关键不是哪个更好，而是你的时间、路程承受度和期待画面，世界是属于勇敢者的游戏。","text-9":"选 Agafay。马拉喀什出发约 40 分钟至 1 小时，当日往返，适合家庭、老人、小朋友和行程紧张的客人。","text-10":"600元/人","text-11":"当日往返","text-12":"晚餐+篝火+骆驼","text-13":"选 Merzouga。路途远，但能看到 Erg Chebbi 金色沙丘、沙漠日出日落、星空营地和更完整的公路旅行风景。","text-14":"3天2晚","text-15":"真沙丘","text-16":"可到非斯","text-17":"Choose Faster","text-18":"尽享北非沙漠的异域风情","text-19":"","text-20":"省时间","text-21":"只有一天，选 Agafay","text-22":"不用长途奔波，也能完成骑骆驼、沙漠晚餐、篝火晚会和日落拍照。","text-23":"看真沙丘","text-24":"想要撒哈拉，选 Merzouga","text-25":"这里才是连绵金色沙丘、骆驼队穿越沙海、星空帐篷的经典摩洛哥画面。","text-26":"走路线","text-27":"之后去非斯，选单程线","text-28":"马拉喀什开始，Merzouga 后前往非斯，不走回头路，是很经典的南部穿越路线。","text-29":"Side By Side","text-30":"核心区别一览","text-31":"Agafay 可以作为 Merzouga 的平替体验，但不是完全替代。一个胜在近和轻松，一个胜在真正沙丘和完整风景，一辈子可能。","text-32":"Agafay 沙漠","text-33":"轻量版体验","text-34":"更像“距离城市最近的沙漠体验”。地貌以岩石、砾石和荒原为主，适合时间有限、不想坐很久车但想体验沙漠活动的客人。","text-35":"30-40km","text-36":"距离马拉喀什较近","text-37":"40-60min","text-38":"单程车程较短","text-39":"1天","text-40":"半天、一天或一晚都可安排","text-41":"600元","text-42":"当日往返跟团价/人","text-43":"Merzouga 撒哈拉","text-44":"真正沙丘","text-45":"摩洛哥最经典的撒哈拉目的地之一。路途远，但能获得真正沙漠纵深感，也会穿越南部山脉、峡谷和电影取景地。","text-46":"550-560km","text-47":"距离马拉喀什较远","text-48":"9-10h","text-49":"单程实际驾驶时间长","text-50":"3天2晚","text-51":"推荐至少预留三天","text-52":"2路线","text-53":"往返马拉喀什或非斯结束","text-54":"对比项目","text-55":"Agafay 沙漠","text-56":"Merzouga 撒哈拉沙漠","text-57":"沙漠类型","text-58":"石质荒漠，岩石、砾石、荒原和月球地貌。","text-59":"真正的撒哈拉沙丘，Erg Chebbi 金色沙丘区域。","text-60":"路程","text-61":"约 30-40 公里，单程约 40 分钟至 1 小时。","text-62":"约 550-560 公里，单程约 9-10 小时。","text-63":"推荐时间","text-64":"半天、一天或一晚，当日往返最轻松。","text-65":"至少 3 天 2 晚，更适合深度行程。","text-66":"主要体验","text-67":"日落、营地晚餐、篝火晚会、骆驼骑行体验。","text-68":"沙丘日出日落、骑骆驼、滑沙、沙漠露营、星空。","text-69":"适合人群","text-70":"时间有限、家庭、老人、小朋友、不想长途坐车的客人。","text-71":"第一次来摩洛哥、想体验真正撒哈拉、能接受长途车程的客人。","text-72":"Route & Landscape","text-73":"路程和地形，决定体验差异","text-74":"Merzouga 不是单纯“去沙漠”，而是一条穿越摩洛哥南部自然景观的公路旅行；Agafay 则是把沙漠氛围压缩进一天。","text-75":"Merzouga 经典三天线路","text-76":"马拉喀什","text-77":"出发，开始南部公路旅行。","text-78":"高阿特拉斯山脉","text-79":"翻越海拔超过 2000 米的山口，可见山谷、季节性雪山和柏柏尔村庄。","text-80":"瓦尔扎扎特地区","text-81":"电影取景地氛围浓厚，适合安排途中停留。","text-82":"Dades / Todra 峡谷","text-83":"红色岩壁峡谷，是前往沙漠途中的自然景观重点。","text-84":"Merzouga 撒哈拉","text-85":"进入 Erg Chebbi 金色沙丘，体验骆驼、滑沙、营地和星空。","text-86":"返回马拉喀什或前往非斯","text-87":"可选往返线，也可选非斯结束，不走回头路。","text-88":"Agafay 路程感","text-89":"距离短，活动集中，适合加进马拉喀什行程","text-90":"从马拉喀什出发约 40 分钟左右抵达，可以当天往返。适合只停留 2-3 天、想增加一个沙漠主题体验但不想每天坐车几个小时的客人。","text-91":"Merzouga 路程感","text-92":"路途远，但风景层次完整","text-93":"长车程是成本，也是价值的一部分。途中会穿越山脉、村庄、峡谷和电影取景地，最后抵达真正的撒哈拉沙丘。","text-94":"Tour Options","text-95":"我们的沙漠团怎么选","text-96":"把包含项目写清楚，客人会更容易理解价格背后的体验差异。","text-97":"Agafay 当日往返","text-98":"马拉喀什 - Agafay - 马拉喀什","text-99":"/人","text-100":"往返交通","text-101":"沙漠营地晚餐","text-102":"篝火晚会","text-103":"骆驼骑行体验","text-104":"适合：只有一天时间，也想拥有一次摩洛哥沙漠体验的客人。","text-105":"Merzouga 三天两夜","text-106":"马拉喀什往返 / 马拉喀什开始非斯结束","text-107":"交通","text-108":"两晚住宿","text-109":"2 天早餐","text-110":"2 天晚餐","text-111":"沙漠营地住宿","text-112":"篝火晚会","text-113":"骆驼骑行","text-114":"滑沙体验","text-115":"适合：时间充裕、想看真正撒哈拉，或后续计划去非斯、不想走回头路的客人。","text-116":"Decision Helper","text-117":"按客人的一句话快速推荐","text-118":"点击不同需求，页面会切换推荐结论。发给客人时，也可以直接截图对应状态。","text-119":"我只有一天","text-120":"我想看真沙丘","text-121":"我不想久坐车","text-122":"我后面去非斯","text-123":"Merzouga","text-124":"马拉喀什开始，非斯结束","text-125":"推荐 Merzouga 非斯结束路线","text-126":"如果客人后续计划去非斯，选择马拉喀什到 Merzouga 再到非斯的路线更顺，不用回头。它也是很多游客认为最经典的摩洛哥线路之一。","text-127":"Final Advice","text-128":"最终建议","text-129":"Agafay 是 Merzouga 的轻量版沙漠体验，不是完全替代。如果客人时间有限、不想花两天在路上，Agafay 可以用一天时间体验摩洛哥沙漠文化；如果梦想是骑骆驼走进撒哈拉，看太阳落在金色沙丘后面，晚上睡在沙漠星空下，那么一定选择 Merzouga。","text-130":"想方便、省时间：Agafay","text-131":"想看真正撒哈拉：Merzouga","text-132":"想拍大片和体验活动：两者都值得，只是体验完全不同"},"images":{"route-map":"assets/route-map.jpg","hero":"assets/hero.jpg","agafay":"assets/agafay.jpg","merzouga":"assets/merzouga.jpg","route":"assets/route.jpg","decision":"assets/decision.jpg","final":"assets/final.jpg","decision-day":"assets/decision-day.jpg","decision-sahara":"assets/decision-sahara.jpg","decision-family":"assets/decision-family.jpg","decision-fes":"assets/decision-fes.jpg"}};
+      const imageVariableFor = (slot) => slot?.classList.contains("hero") ? "--hero-image" : "--slot-image";
+      const applyImage = (id, url) => {
+        const slot = [...document.querySelectorAll("[data-image-id]")]
+          .find((node) => node.dataset.imageId === id);
+        if (!slot || !url) return;
+        slot.style.setProperty(imageVariableFor(slot), `url("${url}")`);
+        slot.classList.add("has-custom-image");
+      };
+      const syncDecisionBadge = () => {
+        const badge = document.querySelector("[data-decision-visual]");
+        if (!badge) return;
+        const activeChoice = document.querySelector(".filter.is-active")?.dataset.choice || "day";
+        const decisionId = {
+          day: "decision-day",
+          sahara: "decision-sahara",
+          family: "decision-family",
+          fes: "decision-fes"
+        }[activeChoice] || badge.dataset.decisionVisual || "decision-day";
+        badge.dataset.decisionVisual = decisionId;
+        const source = [...document.querySelectorAll("[data-image-id]")]
+          .find((node) => node.dataset.imageId === decisionId);
+        const imageValue = source?.style.getPropertyValue("--slot-image");
+        if (imageValue) {
+          badge.style.setProperty("--slot-image", imageValue);
+          badge.classList.add("has-custom-image");
+        }
+      };
+
+      document.body.classList.add("customer-ready", "published-customer");
+      document.body.dataset.theme = publishedState.theme || document.body.dataset.theme || "desert";
+      document.querySelectorAll("[contenteditable]").forEach((node) => node.removeAttribute("contenteditable"));
+      Object.entries(publishedState.text || {}).forEach(([id, value]) => {
+        const target = [...document.querySelectorAll("[data-editable-text]")]
+          .find((node) => node.dataset.editableText === id);
+        if (target && typeof value === "string") target.textContent = value;
+      });
+      Object.entries(publishedState.images || {}).forEach(([id, url]) => applyImage(id, url));
+      syncDecisionBadge();
+      document.querySelectorAll(".filter").forEach((button) => {
+        button.addEventListener("click", () => window.setTimeout(syncDecisionBadge, 0));
+      });
+    })();
+  </script>
+</body>
+</html>
